@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+    .element-center {
+        @apply flex justify-center items-center
+    }
+    .container {
+        @apply mx-auto px-[30px]
+    }
+    .btn {
+        background: #42b0d1;
+    }
+    .btn:hover {
+        background: #8cdae4;
+        transition: 0.2s
+    }
+}
