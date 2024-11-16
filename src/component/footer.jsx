@@ -1,9 +1,15 @@
 import { useState } from "react"
+import img1 from '../assets/logo.svg'
+import img2 from '../assets/icon-location.svg'
+import img3 from '../assets/icon-phone.svg'
+import img4 from '../assets/icon-email.svg'
 
 function Footer() {
     const [phone, setPhone] = useState(
-        [{ icon: 'icon-phone.svg', data: '+201018759812' },
-        { icon: 'icon-email.svg', data: 'email@example.com' }]
+        [
+            { img: img3, data: '+201018759812' },
+            { img: img4, data: 'email@example.com' }
+        ]
     )
     const [about, setAbout] = useState([
         'About Us',
@@ -26,18 +32,18 @@ function Footer() {
         <footer className="bg-slate-950 pt-52 pb-24 relative -z-20">
             <div className="container">
                 <div>
-                    <img src="src/assets/logo.svg" alt="" />
+                    <img src={img1} alt="" />
                 </div>
                 <div className="text-white text-sm element-center flex-wrap mt-10 gap-28">
                     <div className="flex items-start gap-2">
-                        <img src="./src/assets/icon-location.svg" alt="" />
+                        <img src={img2} alt="" />
                         <p className=" w-[300px] sm:w-[400px] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores cum eius tempore harum temporibus cupiditate nulla! Totam, id exercitationem.</p>
                     </div>
                     <div className="flex flex-col gap-3">
                         {
                             phone.map((p) => {
-                                return <div key={p.icon} className="flex gap-3">
-                                    <img src={`./src/assets/${p.icon}`} alt="" />
+                                return <div key={p.img} className="flex gap-3">
+                                    <img src={p.img} alt="" />
                                     <h3>{p.data}</h3>
                                 </div>
                             })
