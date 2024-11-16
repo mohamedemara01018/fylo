@@ -30,7 +30,7 @@ export default Feature
 function FeatureBox({ icon, title, desc }) {
     return (
         <div className="element-center flex-col ">
-            <img src={`src/assets/images/${icon}`} className="w-[80px] h-[80px] object-contain" alt="" />
+            <img src={`src/assets/${icon}`} className="w-[80px] h-[80px] object-contain" alt="" />
             <div className="text-white element-center max-w-full flex-col text-center">
                 <h4 className="text-xl font-semibold my-3">{title}</h4>
                 <p className="font-normal text-sm w-[360px] max-w-full w-92 ">{desc}</p>

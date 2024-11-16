@@ -26,18 +26,18 @@ function Footer() {
         <footer className="bg-slate-950 pt-52 pb-24 relative -z-20">
             <div className="container">
                 <div>
-                    <img src="src/assets/images/logo.svg" alt="" />
+                    <img src="src/assets/logo.svg" alt="" />
                 </div>
                 <div className="text-white text-sm element-center flex-wrap mt-10 gap-28">
                     <div className="flex items-start gap-2">
-                        <img src="./src/assets/images/icon-location.svg" alt="" />
+                        <img src="./src/assets/icon-location.svg" alt="" />
                         <p className=" w-[300px] sm:w-[400px] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores cum eius tempore harum temporibus cupiditate nulla! Totam, id exercitationem.</p>
                     </div>
                     <div className="flex flex-col gap-3">
                         {
                             phone.map((p) => {
                                 return <div key={p.icon} className="flex gap-3">
-                                    <img src={`./src/assets/images/${p.icon}`} alt="" />
+                                    <img src={`./src/assets/${p.icon}`} alt="" />
                                     <h3>{p.data}</h3>
                                 </div>
                             })

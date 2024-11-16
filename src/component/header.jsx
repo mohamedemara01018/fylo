@@ -15,7 +15,7 @@ function Header () {
     return (
         <header className={`fixed top-0 left-0 w-full pt-10  p-3 transition-all duration-200 ${condition}`}>
             <div className={`container flex justify-between items-center gap-4 sm:gap-none flex-col sm:flex-row `}>
-                <a href="/"><img src="./src/assets/images/logo.svg" alt="" /></a>
+                <a href="/"><img src="./src/assets/logo.svg" alt="" /></a>
                 <ul className="flex gap-10 text-white text-[17px]">
                     {
                         links.map((link)=>{

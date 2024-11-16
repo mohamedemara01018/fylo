@@ -25,7 +25,7 @@ function Testmon() {
     return (
         <section className="mt-[120px]" >
             <div className="container relative">
-                <img src="/src/assets/images/bg-quotes.png" className="absolute top-[-35px] left-6 -z-20 " alt="" />
+                <img src="/src/assets/bg-quotes.png" className="absolute top-[-35px] left-6 -z-20 " alt="" />
                 <div className="box grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 relative -z-10 ">
                     {
                         data.map((d) => {
@@ -52,7 +52,7 @@ function Test({ desc, img, name, about }) {
         <div className=" text-white bg-slate-800 rounded-md p-5 shadow-[4px_4px_8px_4px_#181727]">
             <p>{desc}</p>
             <div className="element-center justify-start mt-7 gap-3">
-                <img src={`./src/assets/images/${img}`} className="rounded-full w-[80px] h-[80px]" alt="" />
+                <img src={`./src/assets/${img}`} className="rounded-full w-[80px] h-[80px]" alt="" />
                 <div>
                     <strong className="text-lg ">{name}</strong>
                     <p >{about}</p>
